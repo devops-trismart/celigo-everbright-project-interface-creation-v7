@@ -1,0 +1,228 @@
+{
+  "_id": "656a61340c0dfb407b24bca7",
+  "name": "Project Interface Creation - v7",
+  "pageGenerators": [
+    {
+      "_exportId": "656a64250697aa3425286447",
+      "skipRetries": false
+    }
+  ],
+  "pageProcessors": [
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656abfa40c0dfb407b24c1c4"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656ad67e7b6db14e34c738ff"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656adb8e2728dd6db43285f6"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656ae06710be60191d1dd577"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656aef4b0c0dfb407b24c245"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b35547b6db14e34c739d3"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b3751530220570f99717f"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b3b71530220570f99718e"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b3f3c7b6db14e34c739fc"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b406d10be60191d1dde9d"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b41f60697aa34252869ea"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b44cc7b6db14e34c73a23"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b46442d244528063ffcd7"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b47690697aa3425286a17"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b4a440c0dfb407b24c6c7"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656b5dd52d244528063ffd6b"
+    },
+    {
+      "responseMapping": {
+        "fields": [],
+        "lists": []
+      },
+      "type": "import",
+      "_importId": "656ad4330697aa342528690a"
+    }
+  ]
+}

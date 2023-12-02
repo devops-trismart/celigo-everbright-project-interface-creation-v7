@@ -1,0 +1,301 @@
+{
+  "_id": "656b35547b6db14e34c739d3",
+  "name": "Get organization_pv_module",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ecaacb56e8",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 5,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "c13f560f-cf47-4c94-b570-143fe41ca60d",
+              "wholesale_price_amount": 1,
+              "retail_price_amount": 1,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": true,
+              "pv_module": {
+                "uuid": "5a8ac823-f38d-4460-8b8c-24eb9f6d9aee",
+                "manufacturer": "8c8cf9d8-9fbd-4636-b017-b8fa779718e9",
+                "manufacturer_name": "Hanwha Q CELLS",
+                "manufacturer_name_abbreviation": "Hanwha",
+                "model": "Q.PEAK DUO BLK ML-G10+ 405",
+                "frame": "BK",
+                "length_mm": 1879,
+                "width_mm": 1045,
+                "height_mm": 32,
+                "cell_type": "MONO",
+                "cell_count": 66,
+                "diode_count": 3,
+                "rating_nominal": 405,
+                "rating_ptc": 376.3,
+                "v_oc_stc": 45.3,
+                "i_sc_stc": 11.17,
+                "i_mp_stc": 10.83,
+                "v_mp_stc": 37.4,
+                "efficiency": 20.6,
+                "alpha_isc": 0.041,
+                "beta_voc": -0.27,
+                "gamma_pmp": -0.362,
+                "t_noct": 45.7,
+                "a_stc": 1.692553584,
+                "i_l_stc": 11.39741311,
+                "i_o_stc": 2.7e-11,
+                "r_s_stc": 0.2495541101,
+                "r_sh_stc": 981.850351,
+                "source_5par": "CALC",
+                "ul_cert": 1000,
+                "ac_module": false,
+                "integrated_microinverter": null
+              }
+            },
+            {
+              "uuid": "ea87ffd4-0c08-4702-93c6-43a474942d66",
+              "wholesale_price_amount": 0.1,
+              "retail_price_amount": 0.1,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": false,
+              "pv_module": {
+                "uuid": "ee43c2de-f274-4d29-af3f-3513c425db9c",
+                "manufacturer": "8c8cf9d8-9fbd-4636-b017-b8fa779718e9",
+                "manufacturer_name": "Hanwha Q CELLS",
+                "manufacturer_name_abbreviation": "Hanwha",
+                "model": "Q.TRON BLK M-G2+ 425",
+                "frame": "BK",
+                "length_mm": 1722,
+                "width_mm": 1134,
+                "height_mm": 30,
+                "cell_type": "MONO",
+                "cell_count": 54,
+                "diode_count": 3,
+                "rating_nominal": 425,
+                "rating_ptc": 396.4,
+                "v_oc_stc": 39.03,
+                "i_sc_stc": 13.66,
+                "i_mp_stc": 12.98,
+                "v_mp_stc": 32.74,
+                "efficiency": 21.8,
+                "alpha_isc": 0.04,
+                "beta_voc": -0.24,
+                "gamma_pmp": -0.3,
+                "t_noct": 43,
+                "a_stc": 1.359814271,
+                "i_l_stc": 13.66707726,
+                "i_o_stc": 4.64e-12,
+                "r_s_stc": 0.152626559,
+                "r_sh_stc": 294.5884165,
+                "source_5par": "CALC",
+                "ul_cert": 1000,
+                "ac_module": false,
+                "integrated_microinverter": null
+              }
+            },
+            {
+              "uuid": "daa6f777-0fdb-4ee4-b76c-80ec123bbbd3",
+              "wholesale_price_amount": 1,
+              "retail_price_amount": 1,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": false,
+              "pv_module": {
+                "uuid": "87204f98-ba56-4cdb-b8aa-a2d7de162f86",
+                "manufacturer": "c6b7ae6e-0ef3-4934-be99-f870af2848e2",
+                "manufacturer_name": "LONGi Solar",
+                "manufacturer_name_abbreviation": "LS",
+                "model": "LR4-60HPH-350M",
+                "frame": "NA",
+                "length_mm": 1755,
+                "width_mm": 1038,
+                "height_mm": 35,
+                "cell_type": "MONO",
+                "cell_count": 60,
+                "diode_count": 3,
+                "rating_nominal": 350,
+                "rating_ptc": 326,
+                "v_oc_stc": 40.5,
+                "i_sc_stc": 11.02,
+                "i_mp_stc": 10.52,
+                "v_mp_stc": 33.3,
+                "efficiency": 19.2,
+                "alpha_isc": 0.04400181488,
+                "beta_voc": -0.268,
+                "gamma_pmp": -0.339,
+                "t_noct": 45.7,
+                "a_stc": 1.480551,
+                "i_l_stc": 11.139198,
+                "i_o_stc": 1.45e-11,
+                "r_s_stc": 0.250145,
+                "r_sh_stc": 309.437439,
+                "source_5par": "NREL",
+                "ul_cert": 1000,
+                "ac_module": false,
+                "integrated_microinverter": null
+              }
+            },
+            {
+              "uuid": "7d0710ab-e850-464b-b509-785cf39e45b3",
+              "wholesale_price_amount": 0.1,
+              "retail_price_amount": 0.1,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": false,
+              "pv_module": {
+                "uuid": "d4049279-cc99-406e-9460-8a2179ad4260",
+                "manufacturer": "13eef741-0afb-4565-94c7-6b6a5db17a21",
+                "manufacturer_name": "REC Solar",
+                "manufacturer_name_abbreviation": "REC",
+                "model": "REC420AA PURE-R",
+                "frame": "BK",
+                "length_mm": 1730,
+                "width_mm": 1118,
+                "height_mm": 30,
+                "cell_type": "CDTE",
+                "cell_count": 80,
+                "diode_count": 4,
+                "rating_nominal": 420,
+                "rating_ptc": 402.5,
+                "v_oc_stc": 59.4,
+                "i_sc_stc": 8.91,
+                "i_mp_stc": 8.4,
+                "v_mp_stc": 50,
+                "efficiency": 21.8,
+                "alpha_isc": 0.04,
+                "beta_voc": -0.24,
+                "gamma_pmp": -0.24,
+                "t_noct": 44,
+                "a_stc": 1.92952517,
+                "i_l_stc": 8.921403791,
+                "i_o_stc": 3.72e-13,
+                "r_s_stc": 0.373327547,
+                "r_sh_stc": 291.6879504,
+                "source_5par": "NREL",
+                "ul_cert": 1000,
+                "ac_module": false,
+                "integrated_microinverter": null
+              }
+            },
+            {
+              "uuid": null,
+              "wholesale_price_amount": 1,
+              "retail_price_amount": 1,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": false,
+              "pv_module": {
+                "uuid": "ebec7262-0f36-469f-b378-957afb8e9b83",
+                "manufacturer": "13eef741-0afb-4565-94c7-6b6a5db17a21",
+                "manufacturer_name": "REC Solar",
+                "manufacturer_name_abbreviation": "REC",
+                "model": "REC360AA Black",
+                "frame": "BK",
+                "length_mm": 1721,
+                "width_mm": 1016,
+                "height_mm": 30,
+                "cell_type": "POLY",
+                "cell_count": 60,
+                "diode_count": 3,
+                "rating_nominal": 360,
+                "rating_ptc": 340.3,
+                "v_oc_stc": 44.1,
+                "i_sc_stc": 10.23,
+                "i_mp_stc": 9.55,
+                "v_mp_stc": 37.7,
+                "efficiency": 20.6,
+                "alpha_isc": 0.03799609,
+                "beta_voc": -0.24,
+                "gamma_pmp": -0.282,
+                "t_noct": 45.6,
+                "a_stc": 1.525772,
+                "i_l_stc": 10.242102000000001,
+                "i_o_stc": 2.77e-12,
+                "r_s_stc": 0.153571,
+                "r_sh_stc": 129.815994,
+                "source_5par": "NREL",
+                "ul_cert": 1000,
+                "ac_module": false,
+                "integrated_microinverter": null
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/organization_pv_module?project_id={{record.originalPayload.project.project_Id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.org_pv_module.module_count"
+          },
+          {
+            "generate": "originalPayload.org_pv_module.*.module_price_unit",
+            "extract": "results[*].price_unit"
+          },
+          {
+            "generate": "originalPayload.org_pv_module.*.module_retail_price_amount",
+            "extract": "results[*].retail_price_amount"
+          },
+          {
+            "generate": "originalPayload.org_pv_module.*.module_wholesale_price_amount",
+            "extract": "results[*].wholesale_price_amount"
+          },
+          {
+            "generate": "originalPayload.org_pv_module.*.module_model",
+            "extract": "results[*].pv_module.model"
+          },
+          {
+            "generate": "originalPayload.org_pv_module.*.module_manufacturer_name",
+            "extract": "results[*].pv_module.manufacturer_name"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.org_pv_module.module_count"
+        },
+        {
+          "generate": "originalPayload.org_pv_module.*.module_price_unit",
+          "extract": "results[*].price_unit"
+        },
+        {
+          "generate": "originalPayload.org_pv_module.*.module_retail_price_amount",
+          "extract": "results[*].retail_price_amount"
+        },
+        {
+          "generate": "originalPayload.org_pv_module.*.module_wholesale_price_amount",
+          "extract": "results[*].wholesale_price_amount"
+        },
+        {
+          "generate": "originalPayload.org_pv_module.*.module_model",
+          "extract": "results[*].pv_module.model"
+        },
+        {
+          "generate": "originalPayload.org_pv_module.*.module_manufacturer_name",
+          "extract": "results[*].pv_module.manufacturer_name"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

@@ -1,0 +1,212 @@
+{
+  "_id": "656b3751530220570f99717f",
+  "name": "organization_inverter",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "edbf048898",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 3,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "38756ca2-477e-4f2d-9243-d3b9728c4e05",
+              "wholesale_price_amount": 0.2,
+              "retail_price_amount": 0.2,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": false,
+              "inverter": {
+                "uuid": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3",
+                "manufacturer": "61b93d95-cd4e-4b20-a3e1-0648f36e7f34",
+                "manufacturer_name": "Enphase Energy",
+                "manufacturer_name_abbreviation": "Enphase",
+                "model": "IQ7PLUS-72-2-US [240V]",
+                "microinverter": true,
+                "mppt_channels": 1,
+                "terminals_per_channel": 1,
+                "p_dc_max_per_channel": 295,
+                "i_dc_max_per_channel": 25,
+                "i_dc_max": 8.36549,
+                "v_dc_start": 36,
+                "v_dc_max": 45,
+                "v_dc_oper_lower": 16,
+                "v_dc_oper_upper": 60,
+                "v_dc_mppt_lower": 27,
+                "v_dc_mppt_upper": 45,
+                "ac_voltage": 240,
+                "p_ac_nominal": 240,
+                "p_ac_max": 292,
+                "efficiency_peak": 96.481,
+                "efficiency_cec": 96.982,
+                "draw_night": 0.025,
+                "draw_operation": 1.8874,
+                "uses_optimizers": false
+              }
+            },
+            {
+              "uuid": "4842d4f3-d7b3-472a-9107-37ef2572f44f",
+              "wholesale_price_amount": 0.2,
+              "retail_price_amount": 0.2,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": false,
+              "inverter": {
+                "uuid": "262660f9-2fcb-4305-ae20-b94b3e05f31f",
+                "manufacturer": "61b93d95-cd4e-4b20-a3e1-0648f36e7f34",
+                "manufacturer_name": "Enphase Energy",
+                "manufacturer_name_abbreviation": "Enphase",
+                "model": "IQ7X-96-2-US [240V]",
+                "microinverter": true,
+                "mppt_channels": 1,
+                "terminals_per_channel": 1,
+                "p_dc_max_per_channel": 460,
+                "i_dc_max_per_channel": 10,
+                "i_dc_max": 5.38268,
+                "v_dc_start": 60,
+                "v_dc_max": 64,
+                "v_dc_oper_lower": 25,
+                "v_dc_oper_upper": 80,
+                "v_dc_mppt_lower": 53,
+                "v_dc_mppt_upper": 64,
+                "ac_voltage": 240,
+                "p_ac_nominal": 240,
+                "p_ac_max": 315,
+                "efficiency_peak": 97.431,
+                "efficiency_cec": 97.5,
+                "draw_night": 0.0945,
+                "draw_operation": 1.23564,
+                "uses_optimizers": false
+              }
+            },
+            {
+              "uuid": "0c5d26e5-42c5-4caa-866c-43b442c4791c",
+              "wholesale_price_amount": 0.2,
+              "retail_price_amount": 0.2,
+              "price_unit": "$/W",
+              "spec_sheet_name": null,
+              "default": true,
+              "inverter": {
+                "uuid": "a514fdf8-2ea4-4c9f-b42d-6b7af010ffd1",
+                "manufacturer": "61b93d95-cd4e-4b20-a3e1-0648f36e7f34",
+                "manufacturer_name": "Enphase Energy",
+                "manufacturer_name_abbreviation": "Enphase",
+                "model": "IQ8PLUS-72-2-US [240V]",
+                "microinverter": true,
+                "mppt_channels": 1,
+                "terminals_per_channel": 1,
+                "p_dc_max_per_channel": 300,
+                "i_dc_max_per_channel": 15,
+                "i_dc_max": 8.32815,
+                "v_dc_start": 36,
+                "v_dc_max": 45,
+                "v_dc_oper_lower": 25,
+                "v_dc_oper_upper": 58,
+                "v_dc_mppt_lower": 36,
+                "v_dc_mppt_upper": 45,
+                "ac_voltage": 240,
+                "p_ac_nominal": 240,
+                "p_ac_max": 290,
+                "efficiency_peak": 96.746,
+                "efficiency_cec": 97.047,
+                "draw_night": 0.025,
+                "draw_operation": 1.41335,
+                "uses_optimizers": false
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/organization_inverter?project_id={{record.originalPayload.project.project_Id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.org_inverter.inverter_count"
+          },
+          {
+            "generate": "originalPayload.org_inverter.*.inverter_id",
+            "extract": "results[*].inverter.uuid"
+          },
+          {
+            "generate": "originalPayload.org_inverter.*.wholesale_price_amount",
+            "extract": "results[*].wholesale_price_amount"
+          },
+          {
+            "generate": "originalPayload.org_inverter.*.retail_price_amount",
+            "extract": "results[*].retail_price_amount"
+          },
+          {
+            "generate": "originalPayload.org_inverter.*.price_unit",
+            "extract": "results[*].price_unit"
+          },
+          {
+            "extract": "results[*].inverter.manufacturer_name",
+            "generate": "originalPayload.org_inverter.*.manufacturer_name"
+          },
+          {
+            "extract": "results[*].inverter.model",
+            "generate": "originalPayload.org_inverter.*.model"
+          },
+          {
+            "extract": "results[*].inverter.manufacturer",
+            "generate": "originalPayload.org_inverter.*.man_id"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.org_inverter.inverter_count"
+        },
+        {
+          "generate": "originalPayload.org_inverter.*.inverter_id",
+          "extract": "results[*].inverter.uuid"
+        },
+        {
+          "generate": "originalPayload.org_inverter.*.wholesale_price_amount",
+          "extract": "results[*].wholesale_price_amount"
+        },
+        {
+          "generate": "originalPayload.org_inverter.*.retail_price_amount",
+          "extract": "results[*].retail_price_amount"
+        },
+        {
+          "generate": "originalPayload.org_inverter.*.price_unit",
+          "extract": "results[*].price_unit"
+        },
+        {
+          "extract": "results[*].inverter.manufacturer_name",
+          "generate": "originalPayload.org_inverter.*.manufacturer_name"
+        },
+        {
+          "extract": "results[*].inverter.model",
+          "generate": "originalPayload.org_inverter.*.model"
+        },
+        {
+          "extract": "results[*].inverter.manufacturer",
+          "generate": "originalPayload.org_inverter.*.man_id"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

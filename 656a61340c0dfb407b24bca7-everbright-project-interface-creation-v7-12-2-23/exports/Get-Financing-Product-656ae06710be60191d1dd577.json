@@ -1,0 +1,198 @@
+{
+  "_id": "656ae06710be60191d1dd577",
+  "name": "Get Financing Product",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e1afa9991e",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "uuid": "0f8bb022-c758-4120-95f9-09922cec49be",
+          "name": "EverBright EverOwn",
+          "is_offering": true,
+          "available_to_offer": true,
+          "solver_uuid": "b48bc272-faa9-4ccb-9ce5-1fde2052c06e",
+          "organization": {
+            "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+            "name": "TriSMART Solar, LLC",
+            "is_active": true
+          },
+          "financier": {
+            "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+            "name": "EverBright, LLC",
+            "is_active": true
+          },
+          "channel_manager": {
+            "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+            "name": "EverBright, LLC",
+            "is_active": true
+          },
+          "installer": {
+            "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+            "name": "TriSMART Solar, LLC",
+            "is_active": true
+          },
+          "product_type": "LOAN_BUYDOWN_PROMO",
+          "is_active": true,
+          "contract_type": "LOA",
+          "payment_type": "MON"
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/product/{{record.originalPayload.quote.fin_product_Id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "uuid",
+            "generate": "originalPayload.fin_product.fin_product_Id"
+          },
+          {
+            "generate": "originalPayload.fin_product.fin_product_name",
+            "extract": "name"
+          },
+          {
+            "generate": "originalPayload.fin_product.fin_product_solver_uuid",
+            "extract": "solver_uuid"
+          },
+          {
+            "generate": "originalPayload.fin_product.fin_product_organization_name",
+            "extract": "organization.name"
+          },
+          {
+            "generate": "originalPayload.fin_product.fin_product_organization_Id",
+            "extract": "organization.uuid"
+          },
+          {
+            "generate": "originalPayload.fin_product.fin_product_financier_name",
+            "extract": "financier.name"
+          },
+          {
+            "extract": "financier.uuid",
+            "generate": "originalPayload.fin_product.fin_product_financier_uuid"
+          },
+          {
+            "extract": "channel_manager.name",
+            "generate": "originalPayload.fin_product.fin_product_channel_manager_name"
+          },
+          {
+            "extract": "channel_manager.uuid",
+            "generate": "originalPayload.fin_product.fin_product_channel_manager_uuid"
+          },
+          {
+            "extract": "installer.name",
+            "generate": "originalPayload.fin_product.fin_product_installer"
+          },
+          {
+            "extract": "installer.uuid",
+            "generate": "originalPayload.fin_product.fin_product_installer_uuid"
+          },
+          {
+            "extract": "contract_type",
+            "generate": "originalPayload.fin_product.fin_product_contract_type"
+          },
+          {
+            "extract": "payment_type",
+            "generate": "originalPayload.fin_product.fin_product_payment_type"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "uuid",
+          "generate": "originalPayload.fin_product.fin_product_Id"
+        },
+        {
+          "generate": "originalPayload.fin_product.fin_product_name",
+          "extract": "name"
+        },
+        {
+          "generate": "originalPayload.fin_product.fin_product_solver_uuid",
+          "extract": "solver_uuid"
+        },
+        {
+          "generate": "originalPayload.fin_product.fin_product_organization_name",
+          "extract": "organization.name"
+        },
+        {
+          "generate": "originalPayload.fin_product.fin_product_organization_Id",
+          "extract": "organization.uuid"
+        },
+        {
+          "generate": "originalPayload.fin_product.fin_product_financier_name",
+          "extract": "financier.name"
+        },
+        {
+          "extract": "financier.uuid",
+          "generate": "originalPayload.fin_product.fin_product_financier_uuid"
+        },
+        {
+          "extract": "channel_manager.name",
+          "generate": "originalPayload.fin_product.fin_product_channel_manager_name"
+        },
+        {
+          "extract": "channel_manager.uuid",
+          "generate": "originalPayload.fin_product.fin_product_channel_manager_uuid"
+        },
+        {
+          "extract": "installer.name",
+          "generate": "originalPayload.fin_product.fin_product_installer"
+        },
+        {
+          "extract": "installer.uuid",
+          "generate": "originalPayload.fin_product.fin_product_installer_uuid"
+        },
+        {
+          "extract": "contract_type",
+          "generate": "originalPayload.fin_product.fin_product_contract_type"
+        },
+        {
+          "extract": "payment_type",
+          "generate": "originalPayload.fin_product.fin_product_payment_type"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "inputFilter": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        "notempty",
+        [
+          "string",
+          [
+            "extract",
+            "originalPayload.quote.fin_product_Id"
+          ]
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      "notempty",
+      [
+        "string",
+        [
+          "extract",
+          "originalPayload.quote.fin_product_Id"
+        ]
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

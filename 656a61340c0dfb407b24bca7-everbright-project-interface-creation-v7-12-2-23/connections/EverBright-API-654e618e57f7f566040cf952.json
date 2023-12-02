@@ -1,0 +1,25 @@
+{
+  "_id": "654e618e57f7f566040cf952",
+  "type": "http",
+  "name": "EverBright API",
+  "http": {
+    "formType": "http",
+    "mediaType": "json",
+    "baseURI": "https://engine.goeverbright.com",
+    "concurrencyLevel": 25,
+    "targetConcurrencyLevel": 25,
+    "ping": {
+      "method": "GET",
+      "relativeURI": "/api/v1/adder_definition"
+    },
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token 9a492b4ca1ffb9d5e07797ee81f26610e9bb0d20"
+      }
+    ],
+    "auth": {
+      "type": "custom"
+    }
+  }
+}

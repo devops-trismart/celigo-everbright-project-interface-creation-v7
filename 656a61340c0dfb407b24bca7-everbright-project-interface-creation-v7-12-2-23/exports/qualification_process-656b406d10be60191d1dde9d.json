@@ -1,0 +1,96 @@
+{
+  "_id": "656b406d10be60191d1dde9d",
+  "name": "qualification_process",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e5d67fa3f2",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "uuid": "99071b58-4c13-4670-bac2-6f3f4ee3e055",
+          "name": "EverBright Qualification",
+          "description": "",
+          "pre_credit_application_process": "be4bbcdb-d0c0-4de7-b481-0762091e60fd",
+          "pre_title_application_process": null,
+          "pre_property_application_process": null,
+          "regular_credit_application_process": "17dd6296-8742-4d4b-804d-5fa2647793c8",
+          "regular_title_application_process": "0855cb01-83d8-4189-97e8-d43f1fde1fe7",
+          "regular_property_application_process": null,
+          "processing_user": "fb4828f6-7730-4c34-98e2-15305952da1c"
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/qualification_process/{{record.originalPayload.qualification.qualification_process_Id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "generate": "originalPayload.qualification_process.qualification_process_Id",
+            "extract": "uuid"
+          },
+          {
+            "generate": "originalPayload.qualification_process.qualification_process_name",
+            "extract": "name"
+          },
+          {
+            "generate": "originalPayload.qualification_process.pre_credit_application_process",
+            "extract": "pre_credit_application_process"
+          },
+          {
+            "generate": "originalPayload.qualification_process.regular_credit_application_process",
+            "extract": "regular_credit_application_process"
+          },
+          {
+            "generate": "originalPayload.qualification_process.regular_title_application_process",
+            "extract": "regular_title_application_process"
+          },
+          {
+            "generate": "originalPayload.qualification_process.processing_user",
+            "extract": "processing_user"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "generate": "originalPayload.qualification_process.qualification_process_Id",
+          "extract": "uuid"
+        },
+        {
+          "generate": "originalPayload.qualification_process.qualification_process_name",
+          "extract": "name"
+        },
+        {
+          "generate": "originalPayload.qualification_process.pre_credit_application_process",
+          "extract": "pre_credit_application_process"
+        },
+        {
+          "generate": "originalPayload.qualification_process.regular_credit_application_process",
+          "extract": "regular_credit_application_process"
+        },
+        {
+          "generate": "originalPayload.qualification_process.regular_title_application_process",
+          "extract": "regular_title_application_process"
+        },
+        {
+          "generate": "originalPayload.qualification_process.processing_user",
+          "extract": "processing_user"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

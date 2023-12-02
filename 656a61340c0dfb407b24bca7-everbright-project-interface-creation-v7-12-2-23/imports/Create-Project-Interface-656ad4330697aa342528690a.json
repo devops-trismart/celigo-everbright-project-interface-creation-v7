@@ -1,0 +1,34 @@
+{
+  "_id": "656ad4330697aa342528690a",
+  "name": "Create Project Interface",
+  "mockResponse": [
+    {
+      "id": 478945,
+      "statusCode": 200,
+      "_json": {
+        "id": 478945
+      },
+      "ignored": false,
+      "errors": [],
+      "dataURI": ""
+    }
+  ],
+  "_connectionId": "64fa2feeba13695e3ab09df6",
+  "distributed": true,
+  "apiIdentifier": "i23b04f93d",
+  "ignoreExisting": false,
+  "ignoreMissing": false,
+  "oneToMany": false,
+  "lookups": [],
+  "netsuite_da": {
+    "restletVersion": "suiteapp2.0",
+    "operation": "add",
+    "recordType": "customrecord_bb_ss_project_interface",
+    "lookups": [],
+    "mapping": {
+      "fields": [],
+      "lists": []
+    }
+  },
+  "adaptorType": "NetSuiteDistributedImport"
+}

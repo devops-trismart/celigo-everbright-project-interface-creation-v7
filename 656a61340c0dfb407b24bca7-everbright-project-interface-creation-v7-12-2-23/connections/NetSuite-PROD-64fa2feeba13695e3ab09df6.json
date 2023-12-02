@@ -1,0 +1,9 @@
+{
+  "_id": "64fa2feeba13695e3ab09df6",
+  "type": "netsuite",
+  "name": "NetSuite PROD",
+  "netsuite": {
+    "wsdlVersion": "2020.2",
+    "concurrencyLevel": 1
+  }
+}

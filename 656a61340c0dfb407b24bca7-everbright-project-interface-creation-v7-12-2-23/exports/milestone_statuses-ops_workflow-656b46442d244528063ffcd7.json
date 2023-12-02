@@ -1,0 +1,54 @@
+{
+  "_id": "656b46442d244528063ffcd7",
+  "name": "milestone_statuses ops_workflow",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ef22ad7c29",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/ops_workflow/{{record.originalPayload.ops_workflow.ops_workflow_Id}}/milestone_statuses/",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "generate": "originalPayload.ops_workflow_milestone.milestone_ops_Id",
+            "extract": "uuid"
+          },
+          {
+            "generate": "originalPayload.ops_workflow_milestone.task_count",
+            "extract": "task_count"
+          },
+          {
+            "generate": "originalPayload.ops_workflow_milestone.status_text",
+            "extract": "status_text"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "generate": "originalPayload.ops_workflow_milestone.milestone_ops_Id",
+          "extract": "uuid"
+        },
+        {
+          "generate": "originalPayload.ops_workflow_milestone.task_count",
+          "extract": "task_count"
+        },
+        {
+          "generate": "originalPayload.ops_workflow_milestone.status_text",
+          "extract": "status_text"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}
